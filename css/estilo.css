@@ -1,0 +1,191 @@
+/* HEIGHT 100% */
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;}
+
+.bloco {
+    min-height: 100%; 
+    padding-top: 110px;}
+
+/* LOGO */
+.logo_text {
+    font-size: 0;
+    margin: 0;
+}
+
+.logo_img {
+    width: 80px; 
+    margin-top: 7px;
+}
+
+/* MENU */
+
+.navbar ul a:hover {
+    background-color: #252523; 
+    color: #2dc7d0;
+}
+
+.nav-color {
+    background-color: rgba(0,0,0,0.7);
+    transition: background 0.5s linear;
+}
+
+nav{
+  height: 110px;
+  background-color: #000;
+  width: 100%; 
+  line-height: 94px;
+}
+
+nav.nav-extended .nav-wrapper{
+    min-height:110px;
+    height: auto;
+}
+.navbar-fixed{
+    position: :absolute;
+    height: 110px;
+    z-index: 997;
+}
+
+nav i,
+nav [class^="mdi-"], nav [class*="mdi-"],
+nav i.material-icons, nav a.button-collapse i {  
+  height: 94px;
+  line-height: 94px;
+}
+
+/*Home*/
+.home {
+    animation: mudarbg 20s infinite;
+    background-image: url(../imgs/banner.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.banner h2{ 
+    font-size: 2.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.banner p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+
+/* HOME - ANIMATION */
+@keyframes mudarbg {
+    40%  {background-image: url('../imgs/banner1.jpg');}
+    80%  {background-image: url('../imgs/banner4.jpg');}
+    100% {background-image: url('../imgs/banner.jpg');}
+}
+
+.side-nav {
+    background: url('../imgs/tx.png');
+}
+
+.side-nav li>a {
+    color: #fff; font-weight: 100;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+/* TITULO E PARAGRAFO */
+.titulo {
+     font-size: 3em; 
+     text-transform: uppercase;
+}
+
+.titulo::after {
+    display: block; 
+    width: 100px;
+    margin:5px auto;}
+
+.paragrafo {line-height: 1.8rem; 
+
+}
+
+
+/* SOBRE */
+
+.historias p {
+    line-height: 1.8rem;
+    text-align: justify;}
+.sobre .vialactea-planetas-sistemasolar {
+    padding: 20px 0;
+    margin-top: 35px;
+}
+
+.sobre .vialactea-planetas-sistemasolar h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.sobre .vialactea-planetas-sistemasolar p {
+    color: #fff;
+    text-align: center;
+}
+
+
+/* CONTATO */
+.contato { 
+    background-image: url('../imgs/textura1.png');
+}
+
+.contato h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.contato .mapa {
+    min-height: 560px;
+}
+
+.contato .mapa iframe {
+    width: 100%;
+    min-height: 560px;
+    border:none;
+}
+
+.contato .informacoes {
+    background-image: url('../imgs/textura2.png');
+    min-height: 560px; 
+    padding: 30px;
+} 
+
+.contato .formulario {
+    min-height: 560px;
+    padding: 30px;
+}
+
+/* RODAPE */
+footer {
+    background-image: url('../imgs/tx.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding: 30px 0;}
+
+/* MEDIA */
+@media only screen and (max-width: 480px) {
+.card-image-horizontal {display: none;}
+}
+
+@media only screen and (min-width: 601px) {
+.banner {padding-top: 4.5em;}
+.banner h2 {
+    font-size: 4em;}
+.container {width: 85%;}
+}
+
+@media only screen and (min-width: 993px) {
+.banner {padding-top: 5em;}
+.banner h2 {font-size: 5em;}
+.container {width: 90%;}
+}
